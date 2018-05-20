@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     self.split(/[[:punct:]]/)
-    self.delete_if { |x| x.empty? }
+    self.delete { |x| x.empty? }
     self.count 
   end
   
